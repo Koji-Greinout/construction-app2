@@ -1624,24 +1624,24 @@
       <!-- Statistics Grid -->
       <div class="stats-grid">
         <div class="stat-card" onclick="filterRecords('completed')">
-          <div class="stat-value stat-success" data-target="3">0</div>
+          <div class="stat-value stat-success" data-target="8">0</div>
           <div class="stat-label">合格済み</div>
-          <div class="stat-change stat-success">+2 今週</div>
+          <div class="stat-change stat-success">+3 今日</div>
         </div>
         <div class="stat-card" onclick="filterRecords('failed')">
           <div class="stat-value stat-danger" data-target="1">0</div>
           <div class="stat-label">要修正</div>
-          <div class="stat-change stat-danger">-1 改善</div>
+          <div class="stat-change stat-danger">-0 改善</div>
         </div>
         <div class="stat-card" onclick="filterRecords('pending')">
-          <div class="stat-value stat-warning" data-target="4">0</div>
+          <div class="stat-value stat-warning" data-target="6">0</div>
           <div class="stat-label">確認待ち</div>
-          <div class="stat-change stat-warning">+1 新規</div>
+          <div class="stat-change stat-warning">+2 新規</div>
         </div>
         <div class="stat-card" onclick="navigateToPage('recordsPage')">
-          <div class="stat-value stat-primary" data-target="8">0</div>
+          <div class="stat-value stat-primary" data-target="15">0</div>
           <div class="stat-label">総記録数</div>
-          <div class="stat-change stat-primary">+3 今月</div>
+          <div class="stat-change stat-primary">+8 今週</div>
         </div>
       </div>
 
@@ -2951,6 +2951,133 @@
             progress: 100,
             floor: '4F',
             block: 'B-05'
+          },
+          {
+            id: 'R008',
+            title: 'AI判定検査',
+            subtitle: '6F B-12 - 位置決め具検査',
+            status: 'completed',
+            priority: 'high',
+            date: '2024-06-13',
+            author: '田中監督',
+            type: 'AI判定',
+            photos: 1,
+            progress: 100,
+            floor: '6F',
+            block: 'B-12',
+            aiResult: {
+              passed: 22,
+              attention: 2,
+              failed: 0,
+              accuracy: 91.7
+            }
+          },
+          {
+            id: 'R009',
+            title: '寸法精度検査',
+            subtitle: '5F A-08 - 精度測定',
+            status: 'attention',
+            priority: 'high',
+            date: '2024-06-13',
+            author: '佐藤技師',
+            type: '寸法測定',
+            photos: 3,
+            progress: 85,
+            floor: '5F',
+            block: 'A-08',
+            note: '許容値を2.3mm超過、要確認'
+          },
+          {
+            id: 'R010',
+            title: 'スタッド溶接検査',
+            subtitle: '7F C-15 - 強度測定',
+            status: 'completed',
+            priority: 'medium',
+            date: '2024-06-13',
+            author: '鈴木主任',
+            type: '強度測定',
+            photos: 4,
+            progress: 100,
+            floor: '7F',
+            block: 'C-15',
+            testResult: '447 MPa - 合格'
+          },
+          {
+            id: 'R011',
+            title: '配筋工事検査',
+            subtitle: '8F B-20 - 配筋チェック',
+            status: 'pending',
+            priority: 'high',
+            date: '2024-06-13',
+            author: '山田作業員',
+            type: '配筋検査',
+            photos: 0,
+            progress: 0,
+            floor: '8F',
+            block: 'B-20'
+          },
+          {
+            id: 'R012',
+            title: 'コンクリート打設準備',
+            subtitle: '6F 全エリア - 打設前点検',
+            status: 'pending',
+            priority: 'high',
+            date: '2024-06-13',
+            author: '田中監督',
+            type: '打設準備',
+            photos: 0,
+            progress: 0,
+            floor: '6F',
+            block: '全エリア'
+          },
+          {
+            id: 'R013',
+            title: 'AI写真判定',
+            subtitle: '5F B-07 - 自動検査',
+            status: 'completed',
+            priority: 'medium',
+            date: '2024-06-12',
+            author: 'AIシステム',
+            type: 'AI判定',
+            photos: 1,
+            progress: 100,
+            floor: '5F',
+            block: 'B-07',
+            aiResult: {
+              passed: 18,
+              attention: 1,
+              failed: 0,
+              accuracy: 94.7
+            }
+          },
+          {
+            id: 'R014',
+            title: '安全点検',
+            subtitle: '全階 - 月次安全巡回',
+            status: 'completed',
+            priority: 'high',
+            date: '2024-06-12',
+            author: '鈴木安全責任者',
+            type: '安全点検',
+            photos: 12,
+            progress: 100,
+            floor: '全階',
+            block: '全エリア',
+            note: '45日間無事故継続中'
+          },
+          {
+            id: 'R015',
+            title: 'クレーン設置作業',
+            subtitle: '屋上 - タワークレーン',
+            status: 'pending',
+            priority: 'high',
+            date: '2024-06-14',
+            author: '外部業者',
+            type: 'クレーン作業',
+            photos: 0,
+            progress: 0,
+            floor: '屋上',
+            block: 'CR-01'
           },
           {
             id: 'R008',
